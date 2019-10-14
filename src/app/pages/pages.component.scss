@@ -1,0 +1,76 @@
+.fa-10x{
+    font-size: 15em;
+}
+
+//desktop
+@media only screen and (min-width: 768px){
+
+    .cent{
+        // padding:20px;
+        /* border:dotted 1px; */
+        white-space:nowrap;
+        margin-top: 35px;
+    }
+    .card{
+        // width:100px;
+        // height:180px;
+        // background-color: red;
+        margin:100px; 
+        // background: url(http://cloud.niklausgerber.com/2N002H122B0d/yellow.png) center center no-repeat scroll #FFDB77;
+        
+        padding:100px;
+        display:inline-block;
+        border: none;
+    }
+    .fa-10x{
+        font-size: 10em;
+    }
+}
+html>body .cent {
+    height:auto;
+    // background-color: aqua;
+  }
+//tablet
+@media only screen and (min-width: 600px){
+    .fa-10x{
+        font-size: 10em;
+    }
+    .fa-gift{
+        color: green;
+    }
+.fa-business-time{
+    color: blueviolet;
+
+}
+.fa-cogs{
+    color: aqua;
+}
+.fa-archive{
+    color: crimson;
+}
+.fa-history{
+    color: brown;
+}
+   .fa-pencil-ruler{
+    color: blueviolet;
+
+   }
+    .card-title{
+        color: steelblue;
+        text-align: center;
+    }
+    .cent{
+       min-height: 100vh;
+       margin-top: 35px;
+// height: auto;
+//         margin-top: 2px;
+        
+//         padding:20px;
+        /* border:dotted 1px; */
+        // white-space:nowrap;
+    }
+    .card{
+        height: 100%;
+        // background-color: skyblue;
+    }
+}
