@@ -19,4 +19,12 @@ export class DashboardComponent implements OnInit {
     this.router.navigate(['/mainpage/production'])
 
   }
+  Down() {
+    this.router.navigate(['/mainpage/downtime'])
+
+  }
+  Maint() {
+    this.router.navigate(['/mainpage/maintenance'])
+
+  }
 }

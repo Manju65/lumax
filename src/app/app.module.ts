@@ -9,6 +9,11 @@ import { PageComponent } from './page/page.component';
 // import { LoginComponent } from './login/login.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { MainModule } from './modules/all.module';
+import { RouterModule } from '@angular/router';
+import { TableModule, MDBBootstrapModule } from 'angular-bootstrap-md';
+
+
+// import { DowntimeComponent } from './pages/downtime/downtime.component';
 // import { LoginComponent } from './main-page/login/login.component';
 
 @NgModule({
@@ -19,12 +24,16 @@ import { MainModule } from './modules/all.module';
     // FooterComponent,
     // LoginComponent,
     MainpageComponent,
+
     // LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MainModule
+    MainModule,
+    RouterModule,
+    TableModule,
+    MDBBootstrapModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

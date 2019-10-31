@@ -9,12 +9,17 @@ import { DashboardComponent } from '../pages/Dashboard/dashboard.component';
 import { PageComponent } from '../page/page.component';
 import { MainpageComponent } from '../mainpage/mainpage.component';
 import { ProductionComponent } from '../pages/production/production.component';
+import { DowntimeComponent } from '../pages/downtime/downtime.component';
+import { RouterModule } from '@angular/router';
+import { MaintenanceComponent } from '../pages/maintenance/maintenance.component';
 
 
 @NgModule({
     declarations: [
         DashboardComponent,
         ProductionComponent,
+        DowntimeComponent,
+        MaintenanceComponent,
 
         // MainpageComponent,
         // PageComponent,
@@ -26,7 +31,7 @@ import { ProductionComponent } from '../pages/production/production.component';
         HttpClientModule,
         ReactiveFormsModule,
         FormsModule,
-
+        RouterModule,
         ToastrModule.forRoot(),
         ModalModule.forRoot(),
 

@@ -1,0 +1,90 @@
+<div class="container-fluid pro">
+    <div class="row w-100 ">
+        <div class="col h1">
+            <span class="tit">Machine1</span>
+        </div>
+        <div class="col h1">
+            <span class="tit"> Down time report - last 7 days</span>
+        </div>
+        <div class="col h12 ">
+            <a [routerLink]="['/mainpage']"> <i class="fas fa-home"></i></a>
+        </div>
+        <!-- <div class="col h1">
+            <span class="tit"> Status:</span> Running since 3Hrs 40Mins
+        </div> -->
+    </div>
+
+    <div class="row w-100">
+        <table class=" table table-bordered table-hover w-100 table-info" bordered="true">
+            <thead>
+                <tr class="bg-primary">
+                    <th *ngFor="let head of headElements" scope="col">{{head}} </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <!-- <th scope="row">{{el.id}}</th> -->
+                    <td (click)="toggle()"> 15 sep 2019 (2 times) <i class="fas fa-angle-down"></i></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+                <ng-container *ngIf="show">
+                    <tr class="table-secondary">
+                        <!-- <th scope="row">{{el.id}}</th> -->
+                        <td> Sep 15, 11:50 am</td>
+                        <td>Sep 15, 11:55 am</td>
+                        <td>0h:5m</td>
+                        <td>Machine </td>
+                        <td>Power-failure </td>
+                    </tr>
+                    <tr class="table-secondary">
+                        <!-- <th scope="row">{{el.id}}</th> -->
+                        <td> Sep 15, 11:50 am</td>
+                        <td>Sep 15, 11:55 am</td>
+                        <td>0h:5m</td>
+                        <td>Machine1 </td>
+                        <td>Power-failure </td>
+                    </tr>
+                </ng-container>
+                <tr>
+                    <!-- <th scope="row">{{el.id}}</th> -->
+                    <td (click)="toggle1()"> 19 sep 2019 (3 times) <i class="fas fa-angle-down"></i></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+                <ng-container *ngIf="show1">
+                    <tr class="table-secondary">
+                        <!-- <th scope="row">{{el.id}}</th> -->
+                        <td> Sep 19, 12:50 am</td>
+                        <td>Sep 19, 12:55 am</td>
+                        <td>0h:5m</td>
+                        <td>Machine1 </td>
+                        <td>Power-failure </td>
+                    </tr>
+                    <tr class="table-secondary">
+                        <!-- <th scope="row">{{el.id}}</th> -->
+                        <td> Sep 19, 01:50 am</td>
+                        <td>Sep 19, 01:55 am</td>
+                        <td>0h:5m</td>
+                        <td>Machine2 </td>
+                        <td>Power-failure </td>
+                    </tr>
+                    <tr class="table-secondary">
+                        <!-- <th scope="row">{{el.id}}</th> -->
+                        <td> Sep 19, 02:50 am</td>
+                        <td>Sep 19, 02:55 am</td>
+                        <td>0h:5m</td>
+                        <td>Machine2 </td>
+                        <td>Power-failure </td>
+                    </tr>
+                </ng-container>
+            </tbody>
+        </table>
+    </div>
+</div>

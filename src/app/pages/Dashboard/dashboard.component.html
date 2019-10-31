@@ -1,49 +1,58 @@
 <div class="container fluid cent">
-    <div class="card">
-        <div class="card-body">
-            <h5 class="card-title">Production / Rejection</h5>
-            <a href="#" class="btn" (click)="goto()"> <i class="fas fa-gift fa-10x"></i></a>
 
+
+
+    <div class="row fle">
+
+        <div class="card shadow p-3 mb-5 bg-white rounded">
+            <div class="card-body">
+                <h5 class="card-title">Production / Rejection</h5>
+                <a class="btn" (click)="goto()"> <i class="fas fa-gift fa-5x"></i></a>
+
+            </div>
+        </div>
+        <div class="card shadow p-3 mb-5 bg-white rounded">
+            <div class="card-body">
+
+                <h5 class="card-title">Downtime</h5>
+
+                <a class="btn" (click)="Down()"> <i class="fas fa-business-time fa-5x"></i></a>
+                <!-- <i class="fas fa-business-time"></i> -->
+            </div>
+        </div>
+        <div class="card shadow p-3 mb-5 bg-white rounded">
+            <div class="card-body">
+                <h5 class="card-title">Maintenance</h5>
+                <a class="btn" (click)="Maint()"> <i class="fas fa-cogs fa-5x"></i></a>
+            </div>
         </div>
     </div>
-    <div class="card">
-        <div class="card-body">
+    <div class="row fle">
 
-            <h5 class="card-title">Downtime</h5>
+        <div class="card shadow p-3 mb-5 bg-white rounded">
+            <div class="card-body">
+                <h5 class="card-title">Mould catalog
+                </h5>
+                <a href="#" class="btn"> <i class="fas fa-archive fa-5x"></i></a>
 
-            <a href="#" class="btn"> <i class="fas fa-business-time fa-10x"></i></a>
-            <!-- <i class="fas fa-business-time"></i> -->
+            </div>
         </div>
-    </div>
-    <div class="card">
-        <div class="card-body">
-            <h5 class="card-title">Maintenance</h5>
-            <a href="#" class="btn"> <i class="fas fa-cogs fa-10x"></i></a>
+        <div class="card shadow p-3 mb-5 bg-white rounded">
+            <div class="card-body">
+                <h5 class="card-title">Production History
+                </h5>
+                <a href="#" class="btn"> <i class="fas fa-history fa-5x"></i></a>
+
+            </div>
         </div>
-    </div>
-    <div class="card">
-        <div class="card-body">
-            <h5 class="card-title">Mould catalog
-            </h5>
-            <a href="#" class="btn"> <i class="fas fa-archive fa-10x"></i></a>
+        <div class="card shadow lg p-3 mb-5 bg-white rounded" id="disabler">
+            <div class="card-body">
+                <h5 class="card-title">Production planning
 
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-body">
-            <h5 class="card-title">Production History
-            </h5>
-            <a href="#" class="btn"> <i class="fas fa-history fa-10x"></i></a>
+                </h5>
+                <a href="#" class="btn"> <i class="fas fa-pencil-ruler fa-5x"></i></a>
 
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-body">
-            <h5 class="card-title">Production planning
-
-            </h5>
-            <a href="#" class="btn"> <i class="fas fa-pencil-ruler fa-10x"></i></a>
-
+            </div>
         </div>
     </div>
 </div>

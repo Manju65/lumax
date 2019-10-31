@@ -1,1 +1,68 @@
-<p>production works!</p>
+<div class="container-fluid pro">
+    <div class="row w-100">
+        <div class="col h1">
+            <span class="tit">Machine1</span>
+        </div>
+        <div class="col h1">
+            <span class="tit"> Date: </span>23-sep-2019
+        </div>
+        <div class="col h1">
+            <span class="tit"> Shift:</span> Shift-1
+        </div>
+        <div class="col h12 ">
+            <a [routerLink]="['/mainpage']"> <i class="fas fa-home"></i></a>
+        </div>
+    </div>
+    <span class="h2"> Production</span>
+    <div class="row w-100">
+        <table class=" table table-bordered table-hover w-100 table-info" bordered="true">
+            <thead>
+                <tr class="bg-primary">
+                    <th *ngFor="let head of headElements" scope="col">{{head}} </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let el of elements; let id = index">
+                    <!-- <th scope="row">{{el.id}}</th> -->
+                    <td>
+                        <span (keyup)="changeValue(id, 'heading1', $event)" (blur)="updateList(id, 'heading1', $event)"
+                            contenteditable="true">{{el.heading1}}</span>
+                    </td>
+                    <!-- <td>{{el.heading1}}</td> -->
+                    <td>{{el.heading2}}</td>
+                    <td>{{el.heading3}}</td>
+                    <td>{{el.heading4}}</td>
+                    <td>{{el.heading5}}</td>
+                    <td>{{el.heading6}}</td>
+                    <td>{{el.heading7}}</td>
+                    <td>{{el.heading8}}</td>
+                    <td>{{el.heading9}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <span class="h2"> Rejection</span>
+    <div class="row w-100">
+        <table class="table table-bordered table-hover w-100 table-info" bordered="true">
+            <thead>
+                <tr class="bg-primary">
+                    <th *ngFor="let head of rejection" scope="col">{{head}} </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let el of rej">
+                    <!-- <th scope="row">{{el.id}}</th> -->
+                    <td>{{el.heading1}}</td>
+                    <td>{{el.heading2}}</td>
+                    <td>{{el.heading3}}</td>
+                    <td>{{el.heading4}}</td>
+                    <td>{{el.heading5}}</td>
+                    <td>{{el.heading6}}</td>
+                    <td>{{el.heading7}}</td>
+                    <td>{{el.heading8}}</td>
+                    <td>{{el.heading9}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,34 +1,67 @@
-<nav class="navbar fixed-top transparent navbar-expand-lg navbar-light ">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light ">
     <a class="navbar-brand" href="#">
-        <img src="../../assets/logo.png" width="100" height="30" alt="">
+        <img src="../../assets/lumax.png" width="100" height="30" alt="">
     </a>
     <!-- <a class="navbar-brand" href="#"><img src="/src/assets/logo.png"></a> -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav">
 
+    <div class="collapse navbar-collapse justify-content-center align-items-center" id="navbarNav">
 
-
-            <select class="form-control">
-                <option>PLANT</option>
-                <option>MYSORE</option>
-                <option>GOA</option>
-                <option>Something else here</option>
-
-            </select>
-            <select class="form-control">
-                <option> SHOP Floar</option>
-                <option>Moulding</option>
-                <option>Welding</option>
-                <option>Something else</option>
-
-            </select>
+        <ul class="navbar-nav align-items-center ">
+            <li class="nav-item ">
+                <h5> <span style="color: blue;">Plant -</span> Bangalore</h5>
+            </li>
+            &nbsp;
+            <li class="nav-item">
+                <select class="browser-default custom-select">
+                    <option selected>Select Shop Floar</option>
+                    <option value="1">Welding</option>
+                    <option value="2">Drilling</option>
+                    <option value="3">Moulding</option>
+                </select>
+                <!-- <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Select Shop Floar
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item">Welding</a>
+                        <a class="dropdown-item">Drilling</a>
+                        <a class="dropdown-item">Moulding</a>
+                    </div>
+                </div> -->
+            </li>
+            &nbsp;
+            <li class="nav-item">
+                <select class="browser-default custom-select">
+                    <option selected>Select Machine</option>
+                    <option value="1">Machine 1</option>
+                    <option value="2">Machine 2</option>
+                    <option value="3">Machine 3</option>
+                </select>
+                <!-- <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Select Machine
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item">Machine 1</a>
+                        <a class="dropdown-item">Machine 2</a>
+                        <a class="dropdown-item">Machine 3</a>
+                    </div>
+                </div> -->
+            </li>
         </ul>
     </div>
-    <div>
-        <a style="color:olivedrab;" class="btn" href="#" (click)="logOut()"> LOGOUT</a>
+    <div class="d-flex justify-content-end align-items-center">
+        <div>
+            <h5 style="color: blue;">Admin</h5>
+        </div>
+        <h5>
+            <a style="color:rgb(17, 17, 17);" class="btn" href="#" (click)="logOut()"> <i
+                    class="fas fa-sign-out-alt"></i></a></h5>
     </div>
 </nav>
