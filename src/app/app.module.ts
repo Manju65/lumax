@@ -1,8 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { ModalModule } from 'ngx-bootstrap/modal'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
 // import { PagesComponent } from './pages/pages.component';
 import { PageComponent } from './page/page.component';
 // import { FooterComponent } from './footer/footer.component';
@@ -31,8 +32,10 @@ import { TableModule, MDBBootstrapModule } from 'angular-bootstrap-md';
     BrowserModule,
     AppRoutingModule,
     MainModule,
+    TooltipModule,
     RouterModule,
     TableModule,
+    ModalModule.forRoot(),
     MDBBootstrapModule.forRoot()
   ],
   providers: [],

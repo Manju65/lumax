@@ -41,4 +41,141 @@
 
         </table>
     </div>
+    <div class="h2">Maintenance Schedule <span style="float: right;">
+            <button type="button" class="btn btn-primary" (click)="openModal(template)"><i
+                    class="fas fa-plus"></i></button>
+            <button type="button" class="btn btn-danger"><i class="fas fa-minus"></i></button></span>
+
+        <!-- <button type="button" mdbBtn color="primary" rounded="true" data-toggle="modal" data-target="#basicExample"
+                (click)="frame.show()" mdbWavesEffect> </button> -->
+        <!-- &nbsp; <i class="fas fa-minus"></i> -->
+    </div>
+    <div class="row w-100">
+        <table class=" table table-bordered table-hover w-100 table-info" bordered="true">
+            <thead>
+                <tr class="bg-primary">
+                    <th *ngFor="let head of headElements1" scope="col">{{head}} </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let el of elements1; let id = index">
+                    <th scope="row">{{el.id}}</th>
+                    <td>
+                        <span (keyup)="changeValue(id, 'heading1', $event)" (blur)="updateList(id, 'heading1', $event)"
+                            contenteditable="true">{{el.heading1}}</span>
+                    </td>
+                    <!-- <td>{{el.heading1}}</td> -->
+                    <td>
+                        {{el.heading2}}</td>
+                    <td>
+                        {{el.heading3}}</td>
+                    <td>
+                        {{el.heading4}}</td>
+                    <td>
+                        {{el.heading5}}</td>
+                    <td>
+                        {{el.heading6}}</td>
+                    <td>
+                        {{el.heading7}}</td>
+
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+    <ng-template #template>
+        <div class="modal-header">
+            <h4 class="modal-title pull-left">Add Maintenance Schedule</h4>
+            <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+                <span aria-hidden="true">&times;</span>
+            </button>
+
+        </div>
+        <div class="modal-body">
+            <div class="container-fluid">
+                <form>
+                    <div class="row d-flex justify-content-around">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Start-Date</label>
+                            <input class="form-control form-control-sm" type="text" placeholder="Start-Date">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Start-Time</label>
+                            <input class="form-control form-control-sm" type="text" placeholder="Start-Time">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">END-Date</label>
+                            <input class="form-control form-control-sm" type="text" placeholder="END-Date">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">END-Time</label>
+                            <input class="form-control form-control-sm" type="text" placeholder="END-Time">
+
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="form-group col-3">
+                            <label for="exampleInputEmail1">Maintenance activity</label>
+                            <input class="form-control form-control-sm" type="text" placeholder="Maintenance activity">
+                        </div>
+                        <div class="form-group col-3">
+                            <label for="exampleInputEmail1">Contact Name</label>
+                            <input class="form-control form-control-sm" type="text" placeholder="Contact Name">
+                        </div>
+                        <div class="form-group col-3">
+                            <label for="exampleInputEmail1">Contact Number</label>
+                            <input class="form-control form-control-sm" type="text" placeholder="Contact Number">
+                        </div>
+
+                    </div>
+
+                    <div style="float: right;">
+                        <button type="submit" class="btn btn-primary ">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </ng-template>
+    <!-- <div mdbModal #frame="mdbModal" class="modal fade" id="frameModalTop" tabindex="-1" role="dialog"
+        aria-labelledby="myModalLabel" aria-hidden="true" (open)="onOpen($event)">
+        <div class="modal-dialog modal-notify modal-success" role="document">
+           
+            <div class="modal-content">
+               
+                <div class="modal-header">
+                    <p class="heading lead">Modal Success</p>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="frame.hide()">
+                        <span aria-hidden="true" class="white-text">&times;</span>
+                    </button>
+                </div>
+
+                
+                <div class="modal-body">
+                    <div class="text-center">
+                        <mdb-icon fas icon="check" size="4x" class="mb-3 animated rotateIn"></mdb-icon>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit iusto nulla aperiam
+                            blanditiis
+                            ad consequatur
+                            in dolores culpa, dignissimos, eius non possimus fugiat. Esse ratione fuga, enim, ab
+                            officiis
+                            totam.</p>
+                    </div>
+                </div>
+
+               
+                <div class="modal-footer justify-content-center">
+                    <a type="button" mdbBtn color="primary" class="waves-light" mdbWavesEffect>Get it now
+                        <mdb-icon far icon="gem" class="ml-1"></mdb-icon>
+                    </a>
+                    <a type="button" mdbBtn color="primary" outline="true" class="waves-effect" mdbWavesEffect
+                        (click)="frame.hide()" data-dismiss="modal">No, thanks</a>
+                </div>
+            </div>
+       
+        </div>
+    </div> -->
 </div>
