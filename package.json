@@ -50,7 +50,7 @@
     "ngx-pagination": "^4.0.0",
     "ngx-toastr": "^9.2.0",
     "ngx-ui-switch": "^1.6.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "pdfmake": "^0.1.59",
     "popper.js": "^1.14.7",
     "rxjs": "~6.4.0",
